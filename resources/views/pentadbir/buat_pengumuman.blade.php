@@ -20,43 +20,91 @@
           <div class="col-lg-9">
             <div class="panel panel-grey">
               <div class="panel-heading">
-                Login Form</div>
+                Pengumuman</div>
               <div class="panel-body pan">
                 <form action="#" class="form-horizontal">
                   <div class="form-body pal">
+
                     <div class="form-group">
-                      <label for="inputName" class="col-md-3 control-label">
-                        Name</label>
+                      <label for="inputTajuk" class="col-md-3 control-label">
+                        Tajuk Pengumuman</label>
                       <div class="col-md-9">
                         <div class="input-icon right">
-                          <i class="fa fa-user"></i>
-                          <input id="inputName" type="text" placeholder="" class="form-control"></div>
+                          <i class="fa fa-info-circle"></i>
+                          <input id="inputTajuk" type="text" placeholder="" class="form-control" name="tajuk"></div>
                       </div>
                     </div>
+
                     <div class="form-group">
-                      <label for="inputPassword" class="col-md-3 control-label">
-                        Password</label>
+                      <label for="inputTarikhMula" class="col-md-3 control-label">
+                        Tarikh Mula</label>
                       <div class="col-md-9">
                         <div class="input-icon right">
-                          <i class="fa fa-lock"></i>
-                          <input id="inputPassword" type="text" placeholder="" class="form-control"></div>
-                        <span class="help-block mbn"><a href="#"><small>Forgot password?</small> </a></span>
+                          <i class="fa fa-calendar"></i>
+                          <input id="inputTarikhMula" type="date" placeholder="" class="form-control" name="tarikh_mula"></div>
                       </div>
                     </div>
-                    <div class="form-group mbn">
-                      <div class="col-md-offset-3 col-md-6">
-                        <div class="checkbox">
-                          <label class="">
-                            <div class="icheckbox_minimal-grey" style="position: relative;"><input tabindex="5" type="checkbox" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>&nbsp; Keep me logged in</label></div>
+
+                    <div class="form-group">
+                      <label for="inputTarikhAkhir" class="col-md-3 control-label">
+                        Tarikh Akhir</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-calendar"></i>
+                          <input id="inputTarikhAkhir" type="date" placeholder="" class="form-control" name="tarikh_akhir"></div>
                       </div>
                     </div>
+
+                    <div class="form-group">
+                      <label for="inputMasaMula" class="col-md-3 control-label">
+                        Masa Mula</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-clock-o"></i>
+                          <input id="inputMasaMula" type="time" placeholder="" class="form-control" name="masa_mula"></div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputMasaAkhir" class="col-md-3 control-label">
+                        Masa Akhir</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-clock-o"></i>
+                          <input id="inputMasaAkhir" type="time" placeholder="" class="form-control" name="masa_akhir"></div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputTempat" class="col-md-3 control-label">
+                        Tempat</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-compass"></i>
+                          <input id="inputTempat" type="text" placeholder="" class="form-control" name="tempat"></div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAktiviti" class="col-md-3 control-label">
+                        Penerangan Aktiviti</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-list"></i>
+                          <input id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></div>
+                      </div>
+                    </div>
+
+                    {{--hiddent input--}}
+                    <input type="hidden" name="admin_id">
+
                   </div>
                   <div class="form-actions pal">
                     <div class="form-group mbn">
-                      <div class="col-md-offset-3 col-md-6">
-                        <a href="#" class="btn btn-primary">Register</a>&nbsp;&nbsp;
+                      <div class="btn pull-right">
+                        {{--<a href="#" class="btn btn-primary">Register</a>&nbsp;&nbsp;--}}
                         <button type="submit" class="btn btn-primary">
-                          Login</button>
+                          Hantar</button>
                       </div>
                     </div>
                   </div>
