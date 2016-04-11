@@ -8,7 +8,7 @@ class Classroom extends Model
 {
   protected $fillable = [
       'id',
-      'admins_id',
+      'admin_id',
       'kod_kelas',
       'nama_kelas'
   ];

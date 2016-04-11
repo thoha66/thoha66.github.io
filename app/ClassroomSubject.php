@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class ClassroomSubject extends Model
 {
     protected $fillable = [
-      'classrooms_id',
-      'subjects_id',
-      'teachers_id',
+      'classroom_id',
+      'subject_id',
+      'teacher_id',
       'sesi'
     ];
 

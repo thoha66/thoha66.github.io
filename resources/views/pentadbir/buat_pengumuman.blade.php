@@ -22,9 +22,10 @@
               <div class="panel-heading">
                 Pengumuman</div>
               <div class="panel-body pan">
-                <form action="#" class="form-horizontal">
+                <form class="form-horizontal" method="POST" action="{!! url('news') !!}">
                   <div class="form-body pal">
-
+                    
+                      {!! csrf_field() !!}
                     <div class="form-group">
                       <label for="inputTajuk" class="col-md-3 control-label">
                         Tajuk Pengumuman</label>
@@ -96,7 +97,7 @@
                     </div>
 
                     {{--hiddent input--}}
-                    <input type="hidden" name="admin_id">
+                    <input type="hidden" name="admin_id" value="1">
 
                   </div>
                   <div class="form-actions pal">

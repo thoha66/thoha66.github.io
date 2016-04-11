@@ -4,11 +4,11 @@
     <ul id="side-menu" class="nav">
 
          <div class="clearfix"></div>
-        <li class="active"><a href="{{ route('laman-utama') }}"><i class="fa fa-tachometer fa-fw">
+        <li class="active"><a href="{{ url('laman-utama') }}"><i class="fa fa-tachometer fa-fw">
             <div class="icon-bg bg-orange"></div>
         </i><span class="menu-title">Laman Utama</span></a></li>
 
-        <li><a href="{{ route('buat-pengumuman') }}"><i class="fa fa-bullhorn fa-fw">
+        <li><a href="{!! url('news/create') !!}"><i class="fa fa-bullhorn fa-fw">
             <div class="icon-bg bg-pink"></div>
         </i><span class="menu-title">Buat Pengumuman</span></a>
 

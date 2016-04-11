@@ -12,7 +12,7 @@ class Teacher extends Model
    * @var array
    */
   protected $fillable = [
-    'admins_id',
+    'admin_id',
     'no_kp',
     'jenis_guru',
     'guru_kelas',
