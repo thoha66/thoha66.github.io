@@ -18,11 +18,11 @@
         <div class="panel-body">
           <table class="table table-hover table-bordered">
             <thead>
-            <tr>
-              <th>#</th>
-              <th>Nama Pelaku</th>
-              <th>Tajuk</th>
-              <th>Tindakkan</th>
+            <tr >
+              <th class="text-center">#</th>
+              <th class="text-center">Nama Pelaku</th>
+              <th class="text-center">Tajuk</th>
+              <th class="text-center">Tindakkan</th>
             </tr>
             </thead>
             <tbody>
@@ -37,32 +37,36 @@
               <td>
                 <?php echo $no; ?>
               </td>
-              <td>
+              <td class="text-center">
                 {{ $news->admin->nama }}
 
               </td>
-              <td>
+              <td class="text-center">
                 {{ $news->tajuk }}
               </td>
-              <td>
-                <span class="label label-sm label-success">Approved</span>
-                <span class="label label-sm label-info">Pending</span>
-                <span class="label label-sm label-warning">Suspended</span>
-                <span class="label label-sm label-danger">Blocked</span>
+              <td class="text-center">
+                <a href="facebook.com" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
+                <a type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
+                <a type="button" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>  Buang</a>
               </td>
             </tr>
 
             @empty
               <tr>
                 <td colspan="4">
-                  <p class="alert alert-warning">No task found</p>
+                  <p class="alert alert-warning">Tiada pengumuman yang dijumpai ...</p>
                 </td>
               </tr>
             @endforelse
             </tbody>
 
           </table>
-          {!! $newses->render() !!}
+<div class="text-center">
+  {!! $newses->render() !!}
+</div>
+
+
+
         </div>
       </div>
 @stop

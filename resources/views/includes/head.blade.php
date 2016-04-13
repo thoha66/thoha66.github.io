@@ -18,3 +18,6 @@
 <link type="text/css" rel="stylesheet" href="{{ url('assets/styles/zabuto_calendar.min.css') }}">
 <link type="text/css" rel="stylesheet" href="{{ url('assets/styles/pace.css') }}">
 <link type="text/css" rel="stylesheet" href="{{ url('assets/styles/jquery.news-ticker.css') }}">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+

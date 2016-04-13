@@ -26,7 +26,7 @@ class NewsController extends Controller
 //            ->orderBy('created_at', 'desc')
 //            ->get();
 
-        return view('pentadbir.kemaskini_pengumuman',['newses' => $newses]);
+        return view('pentadbir.pengumuman.kemaskini_pengumuman',['newses' => $newses]);
     }
 
     /**
@@ -36,7 +36,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        return view('pentadbir.buat_pengumuman');
+        return view('pentadbir.pengumuman.buat_pengumuman');
     }
 
     /**
