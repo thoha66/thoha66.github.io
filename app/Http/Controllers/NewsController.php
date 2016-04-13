@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\News;
+use App\Admin;
+use DB;
 
 class NewsController extends Controller
 {
@@ -16,7 +18,15 @@ class NewsController extends Controller
      */
     public function index()
     {
-        return view('pentadbir.buat_pengumuman');
+
+//        $newses = News::with('admin')->orderBy('created_at','desc')->get();
+        $newses = News::with('admin')->orderBy('created_at','desc')->paginate(2);
+//        $newses = News::all();
+//        $newses = DB::table('news')
+//            ->orderBy('created_at', 'desc')
+//            ->get();
+
+        return view('pentadbir.kemaskini_pengumuman',['newses' => $newses]);
     }
 
     /**

@@ -24,7 +24,7 @@
               <div class="panel-body pan">
                 <form class="form-horizontal" method="POST" action="{!! url('news') !!}">
                   <div class="form-body pal">
-                    
+
                       {!! csrf_field() !!}
                     <div class="form-group">
                       <label for="inputTajuk" class="col-md-3 control-label">

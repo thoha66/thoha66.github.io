@@ -13,6 +13,13 @@
         </i><span class="menu-title">Buat Pengumuman</span></a>
 
         </li>
+
+        <li><a href="{!! url('news') !!}"><i class="fa fa-bullhorn fa-fw">
+                    <div class="icon-bg bg-pink"></div>
+                </i><span class="menu-title">Kemaskini Pengumuman</span></a>
+
+        </li>
+
         <li><a href="{{ route('daftar-guru') }}"><i class="fa fa-user fa-fw">
             <div class="icon-bg bg-green"></div>
         </i><span class="menu-title">Daftar Guru</span></a>
