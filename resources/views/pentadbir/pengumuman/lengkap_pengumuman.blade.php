@@ -13,54 +13,108 @@
 @endsection
 
 @section('content')
-      <div class="panel panel-blue" style="background:#FFF;">
-        <div class="panel-heading">Butiran Pengumuman</div>
-        <div class="panel-body">
-          <table class="table table-hover table-bordered">
+      <div class="col-lg-12">
+        <div class="row">
 
-            <tr >
-              <th class="text-center">#</th>
-              <th class="text-center">Nama Pelaku</th>
-              <th class="text-center">Tajuk</th>
-              <th class="text-center">Tindakkan</th>
-            </tr>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-9">
+            <div class="panel panel-grey">
+              <div class="panel-heading">
+                Pengumuman</div>
+              <div class="panel-body pan">
+                <form class="form-horizontal" method="POST" action="{!! url('news') !!}">
+                  <div class="form-body pal">
 
-            <tbody>
+                    {!! csrf_field() !!}
+                    <div class="form-group">
+                      <label for="inputTajuk" class="col-md-3 control-label">
+                        Tajuk Pengumuman</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-info-circle"></i>
+                          <input id="inputTajuk" type="text" placeholder="" class="form-control" name="tajuk"></div>
+                      </div>
+                    </div>
 
-            <tr>
-              <td>
+                    <div class="form-group">
+                      <label for="inputTarikhMula" class="col-md-3 control-label">
+                        Tarikh Mula</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-calendar"></i>
+                          <input id="inputTarikhMula" type="date" placeholder="" class="form-control" name="tarikh_mula"></div>
+                      </div>
+                    </div>
 
-              </td>
-              <td class="text-center">
-                {{ $news->admin->nama }}
+                    <div class="form-group">
+                      <label for="inputTarikhAkhir" class="col-md-3 control-label">
+                        Tarikh Akhir</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-calendar"></i>
+                          <input id="inputTarikhAkhir" type="date" placeholder="" class="form-control" name="tarikh_akhir"></div>
+                      </div>
+                    </div>
 
-              </td>
-              <td class="text-center">
-                {{ $news->tajuk }}
-              </td>
-              <td class="text-center">
-                <a href="facebook.com" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
-                <a type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
-                <a type="button" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>  Buang</a>
-              </td>
-            </tr>
+                    <div class="form-group">
+                      <label for="inputMasaMula" class="col-md-3 control-label">
+                        Masa Mula</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-clock-o"></i>
+                          <input id="inputMasaMula" type="time" placeholder="" class="form-control" name="masa_mula"></div>
+                      </div>
+                    </div>
 
-            @empty
-              <tr>
-                <td colspan="4">
-                  <p class="alert alert-warning">Tiada pengumuman yang dijumpai ...</p>
-                </td>
-              </tr>
-            @endforelse
-            </tbody>
+                    <div class="form-group">
+                      <label for="inputMasaAkhir" class="col-md-3 control-label">
+                        Masa Akhir</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-clock-o"></i>
+                          <input id="inputMasaAkhir" type="time" placeholder="" class="form-control" name="masa_akhir"></div>
+                      </div>
+                    </div>
 
-          </table>
-<div class="text-center">
-  {!! $newses->render() !!}
-</div>
+                    <div class="form-group">
+                      <label for="inputTempat" class="col-md-3 control-label">
+                        Tempat</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-compass"></i>
+                          <input id="inputTempat" type="text" placeholder="" class="form-control" name="tempat"></div>
+                      </div>
+                    </div>
 
+                    <div class="form-group">
+                      <label for="inputAktiviti" class="col-md-3 control-label">
+                        Penerangan Aktiviti</label>
+                      <div class="col-md-9">
+                        <div class="input-icon right">
+                          <i class="fa fa-list"></i>
+                          <textarea rows="5" id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></textarea>
+                          {{--<input id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></div>--}}
+                      </div>
+                    </div>
 
+                    {{--hiddent input--}}
+                    <input type="hidden" name="admin_id" value="1">
 
+                  </div>
+                  <div class="form-actions pal">
+                    <div class="form-group mbn">
+                      <div class="btn pull-right">
+                        {{--<a href="#" class="btn btn-primary">Register</a>&nbsp;&nbsp;--}}
+                        <button type="submit" class="btn btn-primary">
+                          Hantar</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3"></div>
         </div>
       </div>
 @stop

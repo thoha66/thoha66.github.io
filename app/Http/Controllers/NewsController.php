@@ -76,7 +76,7 @@ class NewsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('pentadbir.pengumuman.lengkap_pengumuman',['id' => $id]);
     }
 
     /**

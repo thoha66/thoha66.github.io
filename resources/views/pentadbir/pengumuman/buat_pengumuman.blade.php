@@ -92,9 +92,10 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-list"></i>
-                          <input id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></div>
+                          <textarea rows="5" id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></textarea>
+                          {{--<input id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></div>--}}
+                        </div>
                       </div>
-                    </div>
 
                     {{--hiddent input--}}
                     <input type="hidden" name="admin_id" value="1">
