@@ -88,7 +88,8 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $news = News::find($id);
+        return view('pentadbir.pengumuman.sunting_pengumuman',['news' => $news]);
     }
 
     /**
@@ -100,7 +101,20 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $news = News::find($id);
+        
+        $news->admin_id             = $request->input('admin_id');
+        $news->tajuk                = $request->input('tajuk');
+        $news->tarikh_mula          = $request->input('tarikh_mula');
+        $news->tarikh_akhir         = $request->input('tarikh_akhir');
+        $news->masa_mula            = $request->input('masa_mula');
+        $news->masa_akhir           = $request->input('masa_akhir');
+        $news->tempat               = $request->input('tempat');
+        $news->penerangan_aktiviti  = $request->input('penerangan_aktiviti');
+
+        $news->save();
+
+        return redirect('news');
     }
 
     /**
@@ -111,6 +125,7 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        News::destroy($id);
+        return redirect('news');
     }
 }

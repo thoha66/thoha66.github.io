@@ -16,7 +16,7 @@
 
         <li><a href="{!! url('news') !!}"><i class="fa fa-bullhorn fa-fw">
                     <div class="icon-bg bg-pink"></div>
-                </i><span class="menu-title">Kemaskini Pengumuman</span></a>
+                </i><span class="menu-title">Senarai Pengumuman</span></a>
 
         </li>
 

@@ -48,6 +48,8 @@
                 <a href="{!! url('news/'.$news->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
                 <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
                 <a href="{!! url('news/'.$news->id) !!}" type="button" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>  Buang</a>
+                {{--<a href="{{ action('NewsController@destroy',$news->id) }}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Are you sure?"><i class="glyphicon glyphicon-trash"></i></a>--}}
+                <a href="{{ URL::route('delete-news', $news->id) }}" class="btn btn-block btn-danger" type="submit" ><span class="glyphicon glyphicon-remove"></span> Buang</a>
               </td>
             </tr>
 
@@ -61,9 +63,9 @@
             </tbody>
 
           </table>
-<div class="text-center">
-  {!! $newses->render() !!}
-</div>
+          <div class="text-center">
+            {!! $newses->render() !!}
+          </div>
 
 
 
