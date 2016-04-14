@@ -102,7 +102,7 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         $news = News::find($id);
-        
+
         $news->admin_id             = $request->input('admin_id');
         $news->tajuk                = $request->input('tajuk');
         $news->tarikh_mula          = $request->input('tarikh_mula');
