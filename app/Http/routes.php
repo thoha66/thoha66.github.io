@@ -49,7 +49,7 @@ Route::group(['middleware' => ['web']], function () {
     //Routes for Admins
     Route::resource('admin', 'AdminController');
     Route::resource('news', 'NewsController');
-    Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);
+    // Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);
 //    Route::get('payment-belum-sah', 'PayZakatController@index2'); //Controller Index
 //    Route::get('payment-belum-sah', 'PayZakatController@index2'); //Controller Create
 //    Route::get('payment-belum-sah', 'PayZakatController@index2'); //Controller Store

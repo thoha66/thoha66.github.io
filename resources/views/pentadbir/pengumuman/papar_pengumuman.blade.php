@@ -22,7 +22,7 @@
               <div class="panel-heading">
                 Pengumuman</div>
               <div class="panel-body pan">
-                <form class="form-horizontal">
+                <form class="form-horizontal" action="{!! url('news/'.$news->id) !!}" method="POST" >
                   <div class="form-body pal">
 
                     {!! csrf_field() !!}
@@ -104,9 +104,13 @@
                   <div class="form-actions pal">
                     <div class="form-group mbn">
                       <div class="btn pull-right">
-                        {{--<a href="#" class="btn btn-primary">Register</a>&nbsp;&nbsp;--}}
-                        <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-lg"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
-                        <a href="{!! url('news/'.$news->id) !!}" type="button" class="btn btn btn-danger btn-lg"><i class="glyphicon glyphicon-remove-sign"></i>  Buang</a>
+
+                          <input type="hidden" name="_method" value="DELETE">
+                          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                          <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-lg"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
+                          <button type="submit" value="Submit" class="btn btn btn-danger btn-lg"><i class="glyphicon glyphicon-remove-sign"></i>   Buang</button>
+
                       </div>
                     </div>
                   </div>

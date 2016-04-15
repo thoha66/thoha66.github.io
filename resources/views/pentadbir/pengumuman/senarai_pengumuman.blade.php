@@ -45,16 +45,15 @@
                 {{ $news->tajuk }}
               </td>
               <td class="text-center">
-                <a href="{!! url('news/'.$news->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
-                <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
-                <a href="{{ action('NewsController@destroy',$news->id) }}"  type="button" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>  Buang2</a>
-                <a href="news/{!! $news->id !!}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Are you sure?"><i class="glyphicon glyphicon-trash"></i></a>
 
-                <form action="{!! url('news/'.$news->id) !!}" method="POST" >
-                    <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <button type="submit" value="Submit">Submit</button>
-                </form>
+                          <form action="{!! url('news/'.$news->id) !!}" method="POST" >
+                              <a href="{!! url('news/'.$news->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
+                              <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
+                              <button type="submit" onclick="clicked(event)" value="Submit" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>   Buang</button>
+                              <input type="hidden" name="_method" value="DELETE">
+                              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                          </form>
+
               </td>
             </tr>
 
@@ -78,6 +77,21 @@
       </div>
 @stop
 @section('script')
+          <script>
+              function clicked(e)
+              {
+                  if(!confirm('Are you sure?'))e.preventDefault();
+              }
+          </script>
+          <script type="text/javascript">
+              function clicked() {
+                  if (confirm('Do you want to submit?')) {
+                      yourformelement.submit();
+                  } else {
+                      return false;
+                  }
+              }
+          </script>
 <script type="text/javascript">
 		(function() {
 

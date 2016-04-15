@@ -93,7 +93,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-list"></i>
-                          <textarea rows="5" id="inputAktiviti" type="text" placeholder="{{ $news->penerangan_aktiviti }}" class="form-control" name="penerangan_aktiviti" ></textarea>
+                          <textarea rows="5" id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti" >{{ $news->penerangan_aktiviti }}</textarea>
                           {{--<input id="inputAktiviti" type="text" placeholder="" class="form-control" name="penerangan_aktiviti"></div>--}}
                       </div>
                     </div>
