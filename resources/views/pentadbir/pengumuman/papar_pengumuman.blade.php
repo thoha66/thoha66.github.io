@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-  Daftar Guru
+  Butiran Pengumuman
 @endsection
 
 @section('begin_title_left')
@@ -13,14 +13,15 @@
 @endsection
 
 @section('content')
-      <div class="col-lg-12">
+
         <div class="row">
 
           <div class="col-lg-2"></div>
           <div class="col-lg-9">
             <div class="panel panel-grey">
               <div class="panel-heading">
-                Pengumuman</div>
+                Pengumuman
+              </div>
               <div class="panel-body pan">
                 <form class="form-horizontal" action="{!! url('news/'.$news->id) !!}" method="POST" >
                   <div class="form-body pal">
@@ -114,11 +115,13 @@
                       </div>
                     </div>
                   </div>
+                  </div>
                 </form>
-              </div>
+
             </div>
           </div>
-          <div class="col-lg-3"></div>
         </div>
+          <div class="col-lg-1"></div>
       </div>
+
 @stop

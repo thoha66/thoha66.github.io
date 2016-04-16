@@ -9,7 +9,7 @@
 @endsection
 
 @section('begin_title_right')
-  <li><i class="fa fa-user "></i>&nbsp;<a href="#">Daftar Guru</a>&nbsp;&nbsp;</li>
+  <li><i class="fa fa-user "></i>&nbsp;Daftar Guru</li>
 @endsection
 
 @section('content')
@@ -48,7 +48,6 @@
                         </select>
 
                       </div>
-
                     </div>
 
                     <div class="form-group">
@@ -74,7 +73,7 @@
                       <input type="hidden" name="umur" value="">
                       <input type="hidden" name="jantina" value="">
 
-                    </div>
+
                     <div class="form-actions pal">
                       <div class="form-group mbn">
                         <div class="btn pull-right">
@@ -84,7 +83,7 @@
                         </div>
                       </div>
                     </div>
-
+                  </div>
                 </form>
               </div>
             </div>
