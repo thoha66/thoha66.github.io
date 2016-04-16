@@ -21,15 +21,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/laman-utama', function () {
         return view('pentadbir.laman_utama_pentadbir');
     })->name('laman-utama');
-
-//    Route::get('/buat-pengumuman', function () {
-//        return view('pentadbir.buat_pengumuman');
-//    })->name('buat-pengumuman');
-
-    Route::get('/daftar-guru', function () {
-        return view('pentadbir.daftar_guru');
-    })->name('daftar-guru');
-
+    
     Route::get('/daftar-pelajar', function () {
         return view('pentadbir.daftar_pelajar');
     })->name('daftar-pelajar');
@@ -49,7 +41,10 @@ Route::group(['middleware' => ['web']], function () {
     //Routes for Admins
     Route::resource('admin', 'AdminController');
     Route::resource('news', 'NewsController');
-    // Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);
+    Route::resource('teacher', 'TeacherController');
+
+
+//    Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);
 //    Route::get('payment-belum-sah', 'PayZakatController@index2'); //Controller Index
 //    Route::get('payment-belum-sah', 'PayZakatController@index2'); //Controller Create
 //    Route::get('payment-belum-sah', 'PayZakatController@index2'); //Controller Store

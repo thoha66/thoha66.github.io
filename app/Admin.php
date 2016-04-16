@@ -31,6 +31,7 @@ class Admin extends Model
 
   public function students(){
     return $this->hasMany('App\Student');
+//    return $this->hasMany(Student::class);
   }
 
   public function parents(){

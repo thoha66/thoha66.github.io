@@ -20,9 +20,15 @@
 
         </li>
 
-        <li><a href="{{ route('daftar-guru') }}"><i class="fa fa-user fa-fw">
+        <li><a href="{!! url('teacher/create') !!}"><i class="fa fa-user fa-fw">
             <div class="icon-bg bg-green"></div>
         </i><span class="menu-title">Daftar Guru</span></a>
+
+        </li>
+
+        <li><a href="{!! url('teacher') !!}"><i class="fa fa-user fa-fw">
+                    <div class="icon-bg bg-green"></div>
+                </i><span class="menu-title">Senarai Guru</span></a>
 
         </li>
         <li><a href="{{ route('daftar-pelajar') }}"><i class="fa fa-graduation-cap fa-fw">

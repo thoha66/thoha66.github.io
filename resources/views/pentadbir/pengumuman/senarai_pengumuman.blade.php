@@ -5,11 +5,11 @@
 @endsection
 
 @section('begin_title_left')
-  Kemaskini Pengumuman
+    Senarai Pengumuman
 @endsection
 
 @section('begin_title_right')
-  <li><i class="fa fa-user "></i>&nbsp;<a href="#">Kemaskini Pengumuman</a>&nbsp;&nbsp;
+  <li><i class="fa fa-user "></i>&nbsp;Senarai Pengumuman&nbsp;&nbsp;
 @endsection
 
 @section('content')
@@ -34,7 +34,7 @@
               ?>
 
             <tr>
-              <td>
+              <td class="text-center">
                 <?php echo $no; ?>
               </td>
               <td class="text-center">
