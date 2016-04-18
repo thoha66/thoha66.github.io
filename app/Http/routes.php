@@ -42,6 +42,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('admin', 'AdminController');
     Route::resource('news', 'NewsController');
     Route::resource('teacher', 'TeacherController');
+    Route::resource('student', 'StudentController');
 
 
 //    Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);
