@@ -25,7 +25,7 @@ class CreateStudentsTable extends Migration
             // $table->string('nama_penjaga')->nullable();
             // $table->string('alamat_penjaga')->nullable();
             // $table->string('poskod_penjaga')->nullable();
-            // $table->date('no_tel_penjaga')->nullable();
+            $table->date('tarikh_lahir')->nullable();
             $table->string('alamat')->nullable();
             $table->string('poskod')->nullable();
             $table->string('email')->nullable();

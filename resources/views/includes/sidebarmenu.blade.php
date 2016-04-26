@@ -31,9 +31,14 @@
                 </i><span class="menu-title">Senarai Guru</span></a>
 
         </li>
-        <li><a href="{{ route('daftar-pelajar') }}"><i class="fa fa-graduation-cap fa-fw">
+        <li><a href="{!! url('student/create') !!}"><i class="fa fa-graduation-cap fa-fw">
             <div class="icon-bg bg-violet"></div>
         </i><span class="menu-title">Daftar Pelajar</span></a>
+
+        </li>
+        <li><a href="{!! url('student') !!}"><i class="fa fa-graduation-cap fa-fw">
+                    <div class="icon-bg bg-violet"></div>
+                </i><span class="menu-title">Senarai Pelajar</span></a>
 
         </li>
         <li><a href="{{ route('daftar-pelajar') }}"><i class="fa fa-male fa-fw">
