@@ -30,7 +30,8 @@ class CreateClassroomSubjectsTable extends Migration
 
             $table->foreign('teacher_id')
                   ->references('id')
-                  ->on('teachers');
+                  ->on('teachers')
+                  ->onDelete('cascade');
 
         });
     }
