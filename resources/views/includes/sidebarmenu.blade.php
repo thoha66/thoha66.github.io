@@ -41,14 +41,18 @@
                 </i><span class="menu-title">Senarai Pelajar</span></a>
 
         </li>
-        <li><a href="{{ route('daftar-pelajar') }}"><i class="fa fa-male fa-fw">
+        <li><a href="{!! url('subject/create') !!}"><i class="fa fa-male fa-fw">
             <div class="icon-bg bg-violet"></div>
         </i><span class="menu-title">Daftar Penjaga</span></a>
         </li>
-        <li><a href="{{ route('daftar-subjek') }}"><i class="fa fa-book fa-fw">
+        <li><a href="{!! url('subject/create') !!}"><i class="fa fa-book fa-fw">
             <div class="icon-bg bg-blue"></div>
         </i><span class="menu-title">Daftar Subjek</span></a>
 
+        </li>
+        <li><a href="{!! url('subject') !!}"><i class="fa fa-book fa-fw">
+                    <div class="icon-bg bg-blue"></div>
+                </i><span class="menu-title">Senarai Subjek</span></a>
         </li>
         <li><a href="{{ route('daftar-kelas') }}"><i class="fa fa-institution fa-fw">
             <div class="icon-bg bg-red"></div>
