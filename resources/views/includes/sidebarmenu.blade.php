@@ -54,9 +54,14 @@
                     <div class="icon-bg bg-blue"></div>
                 </i><span class="menu-title">Senarai Subjek</span></a>
         </li>
-        <li><a href="{{ route('daftar-kelas') }}"><i class="fa fa-institution fa-fw">
+        <li><a href="{!! url('classroom/create') !!}"><i class="fa fa-institution fa-fw">
             <div class="icon-bg bg-red"></div>
         </i><span class="menu-title">Daftar Kelas</span></a>
+
+        </li>
+        <li><a href="{!! url('classroom') !!}"><i class="fa fa-institution fa-fw">
+                    <div class="icon-bg bg-red"></div>
+                </i><span class="menu-title">Senarai Kelas</span></a>
 
         </li>
         <li><a href="{{ route('daftar-kelas-subjek') }}"><i class="fa fa-info-circle fa-fw">
