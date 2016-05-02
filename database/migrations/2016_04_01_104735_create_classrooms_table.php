@@ -17,6 +17,7 @@ class CreateClassroomsTable extends Migration
             $table->integer('admin_id')->unsigned();//FK
             $table->string('kod_kelas')->nullable();
             $table->string('nama_kelas')->nullable();
+            $table->string('tingkatan')->nullable();
             $table->timestamps();
 
             $table->foreign('admin_id')

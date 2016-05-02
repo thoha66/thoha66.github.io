@@ -64,9 +64,16 @@
                 </i><span class="menu-title">Senarai Kelas</span></a>
 
         </li>
-        <li><a href="{{ route('daftar-kelas-subjek') }}"><i class="fa fa-info-circle fa-fw">
+
+        <li><a href="{!! url('classroomsubject/create') !!}"><i class="fa fa-info-circle fa-fw">
             <div class="icon-bg bg-yellow"></div>
         </i><span class="menu-title">Daftar Kelas Subjek</span></a>
+        </li>
+
+        <li><a href="{!! url('classroomsubject') !!}"><i class="fa fa-info-circle fa-fw">
+                    <div class="icon-bg bg-yellow"></div>
+                </i><span class="menu-title">Senarai Kelas Subjek</span></a>
+        </li>
 
     </ul>
 </div>

@@ -22,14 +22,6 @@ Route::group(['middleware' => ['web']], function () {
         return view('pentadbir.laman_utama_pentadbir');
     })->name('laman-utama');
 
-    Route::get('/daftar-subjek', function () {
-        return view('pentadbir.subjek.daftar_subjek');
-    })->name('daftar-subjek');
-
-    Route::get('/daftar-kelas', function () {
-        return view('pentadbir.daftar_kelas');
-    })->name('daftar-kelas');
-
     Route::get('/daftar-kelas-subjek', function () {
         return view('pentadbir.daftar_kelas_subjek');
     })->name('daftar-kelas-subjek');
@@ -41,6 +33,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('student', 'StudentController');
     Route::resource('subject', 'SubjectController');
     Route::resource('classroom', 'ClassroomController');
+    Route::resource('classroomsubject', 'ClassroomSubjectController');
 
 
 //    Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);
