@@ -14,11 +14,17 @@ class CreateClassroomSubjectsTable extends Migration
     {
         Schema::create('classroom_subjects', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('admin_id')->unsigned(); //FK
             $table->integer('classroom_id')->unsigned(); //FK
             $table->integer('subject_id')->unsigned(); //FK
             $table->integer('teacher_id')->unsigned(); //FK
             $table->string('sesi')->nullable();
             $table->timestamps();
+
+            $table->foreign('admin_id')
+                ->references('id')
+                ->on('admins')
+                ->onDelete('cascade');
 
             $table->foreign('classroom_id')
                   ->references('id')
@@ -32,6 +38,7 @@ class CreateClassroomSubjectsTable extends Migration
                   ->references('id')
                   ->on('teachers')
                   ->onDelete('cascade');
+
 
         });
     }

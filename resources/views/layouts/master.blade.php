@@ -61,7 +61,8 @@
 
           </div>
           <!--end div after body-->
-@yield('script')
-@include('includes.script')
+  @include('includes.script')
+  @yield('script')
+
 </body>
 </html>

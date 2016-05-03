@@ -50,4 +50,8 @@ class Admin extends Model
     return $this->hasMany('App\ClassroomSubject');
   }
 
+  public function classroomsubjects2(){
+    return $this->hasMany('App\ClassroomSubject');
+  }
+
 }

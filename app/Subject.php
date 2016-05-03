@@ -18,6 +18,10 @@ class Subject extends Model
     }
 
     public function classrooms(){
-      return $this->belongsToMany('App\Classroom','classroom_subjects','subjects_id','classrooms_id');
+      return $this->belongsToMany('App\Classroom','classroom_subjects','subject_id','classroom_id');
+    }
+
+    public function classroomsubjects(){
+        return $this->hasMany('App\ClassroomSubject');
     }
 }
