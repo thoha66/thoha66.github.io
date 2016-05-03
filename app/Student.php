@@ -30,4 +30,7 @@ class Student extends Model
   public function parent(){
     return $this->belongsTo('App\Parent');
   }
+    public function classroom(){
+        return $this->belongsTo('App\Classroom');
+    }
 }

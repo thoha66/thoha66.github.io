@@ -22,4 +22,8 @@ class Classroom extends Model
     return $this->belongsToMany('App\Subject','classroom_subjects','classrooms_id','subjects_id');
   }
 
+  public function students(){
+    return $this->hasMany('App\Student');
+  }
+
 }
