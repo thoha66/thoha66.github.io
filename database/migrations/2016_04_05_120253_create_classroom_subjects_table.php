@@ -38,6 +38,7 @@ class CreateClassroomSubjectsTable extends Migration
                   ->references('id')
                   ->on('teachers')
                   ->onDelete('cascade');
+            
 
 
         });

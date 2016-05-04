@@ -31,8 +31,9 @@ class CreateTeachersTable extends Migration
 
             //Foreign Key Constraints
             $table->foreign('admin_id')
-                  ->references('id')
-                  ->on('admins');
+                ->references('id')
+                ->on('admins');
+            
         });
     }
 
