@@ -34,6 +34,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('subject', 'SubjectController');
     Route::resource('classroom', 'ClassroomController');
     Route::resource('classroomsubject', 'ClassroomSubjectController');
+    Route::resource('task', 'TaskController');
 
 
 //    Route::get('news/{id}',[ 'as' => 'delete-news', 'uses' => 'NewsController@destroy']);

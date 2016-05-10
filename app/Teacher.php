@@ -36,4 +36,7 @@ class Teacher extends Model
     return $this->hasMany('App\ClassroomSubject');
   }
 
+  public function tasks(){
+    return $this->hasMany('App\Task');
+  }
 }

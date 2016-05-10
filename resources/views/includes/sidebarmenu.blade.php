@@ -70,11 +70,29 @@
         </i><span class="menu-title">Daftar Kelas Subjek</span></a>
         </li>
 
-        <li><a href="{!! url('classroomsubject') !!}"><i class="fa fa-info-circle fa-fw">
+        <li><a href="{!! url('classroomsubject') !!}">
+
+                <i class="fa fa-info-circle fa-fw">
                     <div class="icon-bg bg-yellow"></div>
-                </i><span class="menu-title">Senarai Kelas Subjek</span></a>
+                </i><span class="menu-title">Senarai Kelas Subjek</span>
+            </a>
+        </li>
+        {{--Teacher--}}
+        <li><a href="{!! url('task/create') !!}">
+
+                <i class="fa fa-info-circle fa-fw">
+                    <div class="icon-bg bg-yellow"></div>
+                </i><span class="menu-title">Beri Tugasan</span>
+            </a>
         </li>
 
+        <li><a href="{!! url('task') !!}">
+
+                <i class="fa fa-info-circle fa-fw">
+                    <div class="icon-bg bg-yellow"></div>
+                </i><span class="menu-title">Senarai Tugasan</span>
+            </a>
+        </li>
     </ul>
 </div>
 </nav>
