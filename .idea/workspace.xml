@@ -440,7 +440,7 @@
       <workItem from="1462489232649" duration="2668000" />
       <workItem from="1462803665943" duration="5836000" />
       <workItem from="1462840122042" duration="1874000" />
-      <workItem from="1462846588360" duration="8162000" />
+      <workItem from="1462846588360" duration="8255000" />
     </task>
     <task id="LOCAL-00001" summary="guru done for -select all">
       <created>1460812027120</created>
@@ -547,11 +547,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462856079249</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="task -crud done">
+      <created>1462856090310</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1462856090310</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193940000" />
+    <option name="totallyTimeSpent" value="194033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
