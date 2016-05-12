@@ -32,7 +32,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-user "></i>
-                          <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp"></div>
+                          <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp_guru"></div>
                       </div>
                     </div>
 
@@ -63,15 +63,15 @@
 
                       {{--hiddent input--}}
                       <input type="hidden" name="admin_id" value="1">
-                      <input type="hidden" name="nama" value="">
-                      <input type="hidden" name="no_tel" value="">
-                      <input type="hidden" name="no_hp" value="">
-                      <input type="hidden" name="tarikh_lahir" value="">
-                      <input type="hidden" name="alamat" value="">
-                      <input type="hidden" name="poskod" value="">
-                      <input type="hidden" name="email" value="">
-                      <input type="hidden" name="umur" value="">
-                      <input type="hidden" name="jantina" value="">
+                      {{--<input type="hidden" name="nama" value="">--}}
+                      {{--<input type="hidden" name="no_tel" value="">--}}
+                      {{--<input type="hidden" name="no_hp" value="">--}}
+                      {{--<input type="hidden" name="tarikh_lahir" value="">--}}
+                      {{--<input type="hidden" name="alamat" value="">--}}
+                      {{--<input type="hidden" name="poskod" value="">--}}
+                      {{--<input type="hidden" name="email" value="">--}}
+                      {{--<input type="hidden" name="umur" value="">--}}
+                      {{--<input type="hidden" name="jantina" value="">--}}
 
 
                     <div class="form-actions pal">

@@ -17,20 +17,20 @@ class CreateStudentsTable extends Migration
             $table->integer('admin_id')->unsigned(); //Fk
             $table->integer('parent_id')->unsigned(); //Fk
             $table->integer('classroom_id')->unsigned(); //Fk
-            $table->string('no_surat_beranak')->nullable();
-            $table->string('no_kp')->nullable();
-            $table->string('nama')->nullable(); //Tak boleh edit oleh guru. Hanya pentadbir yg boleh edit
-            $table->string('tingkatan')->nullable(); //Menjadi guru kelas di mana ?
-            $table->string('no_kp_penjaga')->nullable();
+            $table->string('no_surat_beranak_pelajar')->nullable();
+            $table->string('no_kp_pelajar')->nullable();
+            $table->string('nama_pelajar')->nullable(); //Tak boleh edit oleh guru. Hanya pentadbir yg boleh edit
+            $table->string('tingkatan_pelajar')->nullable(); //Menjadi guru kelas di mana ?
+            $table->string('no_kp_penjaga_pelajar')->nullable();
             // $table->string('nama_penjaga')->nullable();
             // $table->string('alamat_penjaga')->nullable();
             // $table->string('poskod_penjaga')->nullable();
-            $table->date('tarikh_lahir')->nullable();
-            $table->string('alamat')->nullable();
-            $table->string('poskod')->nullable();
-            $table->string('email')->nullable();
-            $table->string('umur')->nullable();
-            $table->string('jantina')->nullable();
+            $table->date('tarikh_lahir_pelajar')->nullable();
+            $table->string('alamat_pelajar')->nullable();
+            $table->string('poskod_pelajar')->nullable();
+            $table->string('email_pelajar')->nullable();
+            $table->string('umur_pelajar')->nullable();
+            $table->string('jantina_pelajar')->nullable();
             $table->timestamps();
 
             $table->foreign('admin_id')

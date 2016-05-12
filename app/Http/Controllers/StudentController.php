@@ -45,18 +45,11 @@ class StudentController extends Controller
         $student->parent_id = $request->input('parent_id');
         $student->classroom_id = $request->input('classroom_id');
 
-        $student->no_surat_beranak = $request->input('no_surat_beranak');
-        $student->no_kp = $request->input('no_kp');
-        $student->nama = $request->input('nama');
+        $student->no_surat_beranak_pelajar = $request->input('no_surat_beranak_pelajar');
+        $student->no_kp_pelajar = $request->input('no_kp_pelajar');
 
-        $student->tingkatan = $request->input('tingkatan');
-        $student->no_kp_penjaga = $request->input('no_kp_penjaga');
-        $student->tarikh_lahir = $request->input('tarikh_lahir');
-        $student->alamat = $request->input('alamat');
-        $student->poskod = $request->input('poskod');
-        $student->email = $request->input('email');
-        $student->umur = $request->input('umur');
-        $student->jantina = $request->input('jantina');
+        $student->tingkatan_pelajar = $request->input('tingkatan_pelajar');
+        $student->no_kp_penjaga_pelajar = $request->input('no_kp_penjaga_pelajar');
 
         $student->save();
 
@@ -103,18 +96,18 @@ class StudentController extends Controller
         $student->parent_id = $request->input('parent_id');
         $student->classroom_id = $request->input('classroom_id');
 
-        $student->no_surat_beranak = $request->input('no_surat_beranak');
-        $student->no_kp = $request->input('no_kp');
-        $student->nama = $request->input('nama');
+        $student->no_surat_beranak_pelajar = $request->input('no_surat_beranak_pelajar');
+        $student->no_kp_pelajar = $request->input('no_kp_pelajar');
+        $student->nama_pelajar = $request->input('nama_pelajar');
 
-        $student->tingkatan = $request->input('tingkatan');
-        $student->no_kp_penjaga = $request->input('no_kp_penjaga');
-        $student->tarikh_lahir = $request->input('tarikh_lahir');
-        $student->alamat = $request->input('alamat');
-        $student->poskod = $request->input('poskod');
-        $student->email = $request->input('email');
-        $student->umur = $request->input('umur');
-        $student->jantina = $request->input('jantina');
+        $student->tingkatan_pelajar = $request->input('tingkatan_pelajar');
+        $student->no_kp_penjaga_pelajar = $request->input('no_kp_penjaga_pelajar');
+        $student->tarikh_lahir_pelajar = $request->input('tarikh_lahir_pelajar');
+        $student->alamat_pelajar = $request->input('alamat_pelajar');
+        $student->poskod_pelajar = $request->input('poskod_pelajar');
+        $student->email_pelajar = $request->input('email_pelajar');
+        $student->umur_pelajar = $request->input('umur_pelajar');
+        $student->jantina_pelajar = $request->input('jantina_pelajar');
 
         $student->save();
 

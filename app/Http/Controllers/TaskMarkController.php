@@ -40,6 +40,12 @@ class TaskMarkController extends Controller
      */
     public function index()
     {
+        $tasks = Task::where('teacher_id',1)->where('status','sudah')->with('teacher')->orderBy('created_at','desc')->paginate(2);
+
+        return view('guru.tugasan.markah_tugasan.senarai_markah_tugasan',['tasks' => $tasks]);
+    }
+    public function index2()
+    {
 //        $taskmarks = DB::table('task_marks')
 //            ->join('tasks', 'tasks.id', '=', 'task_marks.task_id')
 //            ->where('tasks.teacher_id','=', 1)
@@ -52,7 +58,7 @@ class TaskMarkController extends Controller
             ->join('classrooms', 'classrooms.id', '=', 'classroom_subjects.classroom_id')
             ->join('subjects', 'subjects.id', '=', 'classroom_subjects.subject_id')
             ->where('tasks.teacher_id','=', 1)
-//            ->select('task_marks.*', 'tasks.*', 'classroom_subjects.*')
+            ->select('task_marks.*', 'tasks.*', 'classroom_subjects.*','teachers.*','classrooms.*','subjects.*')
             ->get();
 
 //        $classroomsubject_id = $taskmarks->classroom_subject_id;
@@ -110,7 +116,21 @@ class TaskMarkController extends Controller
      */
     public function show($id)
     {
-        //
+//        $taskmarks = TaskMark::where('task_id',$id)->get();
+        $students = DB::table('task_marks')
+            ->join('students', 'students.id', '=', 'task_marks.student_id')
+            ->join('tasks', 'tasks.id', '=', 'task_marks.task_id')
+            ->join('teachers', 'teachers.id', '=', 'tasks.teacher_id')
+            ->join('classroom_subjects', 'classroom_subjects.id', '=', 'tasks.classroom_subject_id')
+            ->join('classrooms', 'classrooms.id', '=', 'classroom_subjects.classroom_id')
+//            ->join('classrooms', 'classrooms.id', '=', 'students.classroom_id')
+            ->join('subjects', 'subjects.id', '=', 'classroom_subjects.subject_id')
+            ->where('task_marks.task_id','=', $id)
+//            ->select('task_marks.*', 'tasks.*', 'classroom_subjects.*','teachers.*','classrooms.*','subjects.*')
+            ->get();
+//        dd($taskmarks);
+        return view('guru.tugasan.markah_tugasan.papar_markah_tugasan',compact('students','id'));
+
     }
 
     /**
@@ -144,6 +164,7 @@ class TaskMarkController extends Controller
      */
     public function destroy($id)
     {
-        //
+        TaskMark::destroy($id);
+        return redirect('taskmark');
     }
 }

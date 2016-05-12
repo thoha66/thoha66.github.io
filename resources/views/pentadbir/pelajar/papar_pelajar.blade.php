@@ -29,12 +29,12 @@
                 {!! csrf_field() !!}
 
                 <div class="form-group">
-                  <label for="inputNSB" class="col-md-3 control-label">
+                  <label for="no_surat_beranak_pelajar" class="col-md-3 control-label">
                     No Surat Beranak</label>
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="inputNSB" type="text" placeholder="" class="form-control" name="no_surat_beranak" value="{{ $student->no_surat_beranak }} " disabled></div>
+                      <input id="no_surat_beranak_pelajar" type="text" placeholder="" class="form-control" name="no_surat_beranak_pelajar" value="{{ $student->no_surat_beranak_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -44,7 +44,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp" value="{{ $student->no_kp }} " disabled></div>
+                      <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp_pelajar" value="{{ $student->no_kp_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -54,17 +54,17 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="nama" type="text" placeholder="" class="form-control" name="nama" value="{{ $student->nama }} " disabled></div>
+                      <input id="nama" type="text" placeholder="" class="form-control" name="nama_pelajar" value="{{ $student->nama_pelajar }} " disabled></div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="tingkatan" class="col-md-3 control-label">
+                  <label for="tingkatan_pelajar" class="col-md-3 control-label">
                     Tingkatan</label>
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="tingkatan" type="text" placeholder="" class="form-control" name="tingkatan" value="{{ $student->tingkatan }} " disabled></div>
+                      <input id="tingkatan_pelajar" type="text" placeholder="" class="form-control" name="tingkatan_pelajar" value="{{ $student->tingkatan_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -80,22 +80,22 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="no_kp_penjaga" class="col-md-3 control-label">
+                  <label for="no_kp_penjaga_pelajar" class="col-md-3 control-label">
                     Kad Pengenalan Penjaga</label>
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="no_kp_penjaga" type="text" placeholder="" class="form-control" name="no_kp_penjaga" value="{{ $student->no_kp_penjaga }} " disabled></div>
+                      <input id="no_kp_penjaga_pelajar" type="text" placeholder="" class="form-control" name="no_kp_penjaga_pelajar" value="{{ $student->no_kp_penjaga_pelajar }} " disabled></div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="tarikh_lahir" class="col-md-3 control-label">
+                  <label for="tarikh_lahir_pelajar" class="col-md-3 control-label">
                     Tarikh Lahir</label>
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="tarikh_lahir" type="date" placeholder="" class="form-control" name="tarikh_lahir" value="{{ $student->tarikh_lahir }} " disabled></div>
+                      <input id="tarikh_lahir_pelajar" type="date" placeholder="" class="form-control" name="tarikh_lahir_pelajar" value="{{ $student->tarikh_lahir_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -105,7 +105,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="alamat" type="text" placeholder="" class="form-control" name="alamat" value="{{ $student->alamat }} " disabled></div>
+                      <input id="alamat" type="text" placeholder="" class="form-control" name="alamat_pelajar" value="{{ $student->alamat_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -115,7 +115,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="poskod" type="text" placeholder="" class="form-control" name="poskod" value="{{ $student->poskod }} " disabled></div>
+                      <input id="poskod" type="text" placeholder="" class="form-control" name="poskod_pelajar" value="{{ $student->poskod_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -125,7 +125,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="email" type="text" placeholder="" class="form-control" name="email" value="{{ $student->email }} " disabled></div>
+                      <input id="email" type="text" placeholder="" class="form-control" name="email_pelajar" value="{{ $student->email_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -135,7 +135,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="umur" type="text" placeholder="" class="form-control" name="umur" value="{{ $student->umur }} " disabled></div>
+                      <input id="umur" type="text" placeholder="" class="form-control" name="umur_pelajar" value="{{ $student->umur_pelajar }} " disabled></div>
                   </div>
                 </div>
 
@@ -145,7 +145,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="jantina" type="text" placeholder="" class="form-control" name="jantina" value="{{ $student->jantina }} " disabled></div>
+                      <input id="jantina" type="text" placeholder="" class="form-control" name="jantina_pelajar" value="{{ $student->jantina_pelajar }} " disabled></div>
                   </div>
                 </div>
 

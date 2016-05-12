@@ -15,18 +15,18 @@ class CreateTeachersTable extends Migration
         Schema::create('teachers', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('admin_id')->unsigned(); //FK
-            $table->string('no_kp')->nullable();
+            $table->string('no_kp_guru')->nullable();
             $table->string('jenis_guru')->nullable(); //Tak boleh edit oleh guru. Hanya pentadbir yg boleh edit
             $table->string('guru_kelas')->nullable(); //Menjadi guru kelas di mana ?
-            $table->string('nama')->nullable();
-            $table->string('no_tel')->nullable();
-            $table->string('no_hp')->nullable();
-            $table->date('tarikh_lahir')->nullable();
-            $table->string('alamat')->nullable();
-            $table->string('poskod')->nullable();
-            $table->string('email')->nullable();
-            $table->string('umur')->nullable();
-            $table->string('jantina')->nullable();
+            $table->string('nama_guru')->nullable();
+            $table->string('no_tel_guru')->nullable();
+            $table->string('no_hp_guru')->nullable();
+            $table->date('tarikh_lahir_guru')->nullable();
+            $table->string('alamat_guru')->nullable();
+            $table->string('poskod_guru')->nullable();
+            $table->string('email_guru')->nullable();
+            $table->string('umur_guru')->nullable();
+            $table->string('jantina_guru')->nullable();
             $table->timestamps();
 
             //Foreign Key Constraints

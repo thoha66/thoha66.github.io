@@ -39,7 +39,7 @@
               <?php echo $no; ?>
             </td>
             <td class="text-center">
-              {{ $classroom->admin->nama }}
+              {{ $classroom->admin->nama_admin }}
 
             </td>
             <td class="text-center">

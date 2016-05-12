@@ -38,11 +38,11 @@
                 <?php echo $no; ?>
               </td>
               <td class="text-center">
-                {{ $student->admin->nama }}
+                {{ $student->admin->nama_admin }}
 
               </td>
               <td class="text-center">
-                {{ $student->nama }}
+                {{ $student->nama_pelajar }}
               </td>
               <td class="text-center">
 

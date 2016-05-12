@@ -34,7 +34,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="inputNSB" type="text" placeholder="" class="form-control" name="no_surat_beranak" value="{{ $student->no_surat_beranak }}"></div>
+                      <input id="inputNSB" type="text" placeholder="" class="form-control" name="no_surat_beranak_pelajar" value="{{ $student->no_surat_beranak_pelajar }}"></div>
                   </div>
                 </div>
 
@@ -44,7 +44,7 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp" value="{{ $student->no_kp }}"></div>
+                      <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp_pelajar" value="{{ $student->no_kp_pelajar }}"></div>
                   </div>
                 </div>
 
@@ -53,7 +53,7 @@
                     Tingkatan</label>
                   <div class="col-md-9">
 
-                    <select class="form-control" id="tingkatan" name="tingkatan">
+                    <select class="form-control" id="tingkatan" name="tingkatan_pelajar">
                       <option value="Pelajar biasa">Pelajar Biasa</option>
                       <option value="Pelajar kelas">Pelajar Kelas</option>
                       <option value="Pelajar disiplin">Pelajar Disiplin</option>
@@ -79,22 +79,22 @@
                   <div class="col-md-9">
                     <div class="input-icon right">
                       <i class="fa fa-user "></i>
-                      <input id="no_kp_penjaga" type="text" placeholder="" class="form-control" name="no_kp_penjaga" value="{{ $student->no_kp_penjaga }}"></div>
+                      <input id="no_kp_penjaga" type="text" placeholder="" class="form-control" name="no_kp_penjaga_pelajar" value="{{ $student->no_kp_penjaga_pelajar }}"></div>
                   </div>
                 </div>
 
                 {{--hiddent input--}}
                 <input type="hidden" name="admin_id" value="1">
                 <input type="hidden" name="parent_id" value="1">
-                <input type="hidden" name="nama" value="{{ $student->nama }}">
+                {{--<input type="hidden" name="nama" value="{{ $student->nama }}">--}}
                 {{--<input type="hidden" name="no_tel" value="">--}}
                 {{--<input type="hidden" name="no_hp" value="">--}}
-                <input type="hidden" name="tarikh_lahir" value="{{ $student->tarikh_lahir }}">
-                <input type="hidden" name="alamat" value="{{ $student->alamat }}">
-                <input type="hidden" name="poskod" value="{{ $student->poskod }}">
-                <input type="hidden" name="email" value="{{ $student->email }}">
-                <input type="hidden" name="umur" value="{{ $student->umur }}">
-                <input type="hidden" name="jantina" value="{{ $student->jantina }}">
+                {{--<input type="hidden" name="tarikh_lahir" value="{{ $student->tarikh_lahir }}">--}}
+                {{--<input type="hidden" name="alamat" value="{{ $student->alamat }}">--}}
+                {{--<input type="hidden" name="poskod" value="{{ $student->poskod }}">--}}
+                {{--<input type="hidden" name="email" value="{{ $student->email }}">--}}
+                {{--<input type="hidden" name="umur" value="{{ $student->umur }}">--}}
+                {{--<input type="hidden" name="jantina" value="{{ $student->jantina }}">--}}
 
 
                 <div class="form-actions pal">

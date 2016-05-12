@@ -7,15 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Admin extends Model
 {
   protected $fillable = [
-    'no_kp',
-    'nama',
-    'no_tel',
-    'no_hp',
-    'tarikh_lahir',
-    'alamat',
-    'poskod',
-    'email',
-    'jantina'
+    'no_kp_admin',
+    'nama_admin',
+    'no_tel_admin',
+    'no_hp_admin',
+    'tarikh_lahir_admin',
+    'alamat_admin',
+    'poskod_admin',
+    'email_admin',
+    'jantina_admin'
   ];
 
 

@@ -38,11 +38,11 @@
                 <?php echo $no; ?>
               </td>
               <td class="text-center">
-                {{ $teacher->admin->nama }}
+                {{ $teacher->admin->nama_admin }}
 
               </td>
               <td class="text-center">
-                {{ $teacher->nama }}
+                {{ $teacher->nama_guru }}
               </td>
               <td class="text-center">
 
@@ -60,7 +60,7 @@
             @empty
               <tr>
                 <td colspan="4">
-                  <p class="alert alert-warning">Tiada pengumuman yang dijumpai ...</p>
+                  <p class="alert alert-warning">Tiada data yang dijumpai ...</p>
                 </td>
               </tr>
             @endforelse

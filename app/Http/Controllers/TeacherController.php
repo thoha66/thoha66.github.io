@@ -44,20 +44,20 @@ class TeacherController extends Controller
             $teacher = new Teacher;
 
             $teacher->admin_id = $request->input('admin_id');
-            $teacher->no_kp = $request->input('no_kp');
+            $teacher->no_kp_guru = $request->input('no_kp_guru');
             $teacher->jenis_guru = $request->input('jenis_guru');
 
             $teacher->guru_kelas = $request->input('guru_kelas');
-            $teacher->nama = $request->input('nama');
-            $teacher->no_tel = $request->input('no_tel');
-
-            $teacher->no_hp = $request->input('no_hp');
-            $teacher->tarikh_lahir = $request->input('tarikh_lahir');
-            $teacher->alamat = $request->input('alamat');
-            $teacher->poskod = $request->input('poskod');
-            $teacher->email = $request->input('email');
-            $teacher->umur = $request->input('umur');
-            $teacher->jantina = $request->input('jantina');
+//            $teacher->nama = $request->input('nama');
+//            $teacher->no_tel = $request->input('no_tel');
+//
+//            $teacher->no_hp = $request->input('no_hp');
+//            $teacher->tarikh_lahir = $request->input('tarikh_lahir');
+//            $teacher->alamat = $request->input('alamat');
+//            $teacher->poskod = $request->input('poskod');
+//            $teacher->email = $request->input('email');
+//            $teacher->umur = $request->input('umur');
+//            $teacher->jantina = $request->input('jantina');
 
             $teacher->save();
 
@@ -102,20 +102,20 @@ class TeacherController extends Controller
         $teacher = Teacher::find($id);
 
 
-        $teacher->no_kp = $request->input('no_kp');
+        $teacher->no_kp_guru = $request->input('no_kp_guru');
         $teacher->jenis_guru = $request->input('jenis_guru');
 
         $teacher->guru_kelas = $request->input('guru_kelas');
-        $teacher->nama = $request->input('nama');
-        $teacher->no_tel = $request->input('no_tel');
+        $teacher->nama_guru = $request->input('nama_guru');
+        $teacher->no_tel_guru = $request->input('no_tel_guru');
 
-        $teacher->no_hp = $request->input('no_hp');
-        $teacher->tarikh_lahir = $request->input('tarikh_lahir');
-        $teacher->alamat = $request->input('alamat');
-        $teacher->poskod = $request->input('poskod');
-        $teacher->email = $request->input('email');
-        $teacher->umur = $request->input('umur');
-        $teacher->jantina = $request->input('jantina');
+        $teacher->no_hp_guru = $request->input('no_hp_guru');
+        $teacher->tarikh_lahir_guru = $request->input('tarikh_lahir_guru');
+        $teacher->alamat_guru = $request->input('alamat_guru');
+        $teacher->poskod_guru = $request->input('poskod_guru');
+        $teacher->email_guru = $request->input('email_guru');
+        $teacher->umur_guru = $request->input('umur_guru');
+        $teacher->jantina_guru = $request->input('jantina_guru');
 
         $teacher->save();
 

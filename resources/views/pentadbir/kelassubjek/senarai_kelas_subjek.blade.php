@@ -47,7 +47,7 @@
               {{ $ClassroomSubject->subject->nama_subjek }}
             </td>
             <td class="text-center">
-              {{ $ClassroomSubject->teacher->nama }}
+              {{ $ClassroomSubject->teacher->nama_guru }}
             </td>
             <td class="text-center">
               {{ $ClassroomSubject->sesi }}

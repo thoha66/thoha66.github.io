@@ -13,18 +13,18 @@ class Teacher extends Model
    */
   protected $fillable = [
     'admin_id',
-    'no_kp',
+    'no_kp_guru',
     'jenis_guru',
     'guru_kelas',
-    'nama',
-    'no_tel',
-    'no_hp',
-    'tarikh_lahir',
-    'alamat',
-    'poskod',
-    'email',
-    'umur',
-    'jantina'
+    'nama_guru',
+    'no_tel_guru',
+    'no_hp_guru',
+    'tarikh_lahir_guru',
+    'alamat_guru',
+    'poskod_guru',
+    'email_guru',
+    'umur_guru',
+    'jantina_guru'
   ];
 
   // Eloquent: Relationships

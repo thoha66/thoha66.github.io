@@ -29,22 +29,22 @@
                     {!! csrf_field() !!}
 
                     <div class="form-group">
-                      <label for="inputNSB" class="col-md-3 control-label">
+                      <label for="no_surat_beranak_pelajar" class="col-md-3 control-label">
                         No Surat Beranak</label>
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-user "></i>
-                          <input id="inputNSB" type="text" placeholder="" class="form-control" name="no_surat_beranak"></div>
+                          <input id="no_surat_beranak_pelajar" type="text" placeholder="" class="form-control" name="no_surat_beranak_pelajar"></div>
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label for="inputKp" class="col-md-3 control-label">
+                      <label for="no_kp_pelajar" class="col-md-3 control-label">
                         Kad Pengenalan</label>
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-user "></i>
-                          <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp"></div>
+                          <input id="no_kp_pelajar" type="text" placeholder="" class="form-control" name="no_kp_pelajar"></div>
                       </div>
                     </div>
 
@@ -53,7 +53,7 @@
                         Tingkatan</label>
                       <div class="col-md-9">
 
-                        <select class="form-control" id="tingkatan" name="tingkatan">
+                        <select class="form-control" id="tingkatan" name="tingkatan_pelajar">
                           <option value="Pelajar biasa">Pelajar Biasa</option>
                           <option value="Pelajar kelas">Pelajar Kelas</option>
                           <option value="Pelajar disiplin">Pelajar Disiplin</option>
@@ -74,27 +74,27 @@
                     </div>
 
                     <div class="form-group">
-                      <label for="no_kp_penjaga" class="col-md-3 control-label">
+                      <label for="no_kp_penjaga_pelajar" class="col-md-3 control-label">
                         Kad Pengenalan Penjaga</label>
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-user "></i>
-                          <input id="no_kp_penjaga" type="text" placeholder="" class="form-control" name="no_kp_penjaga"></div>
+                          <input id="no_kp_penjaga_pelajar" type="text" placeholder="" class="form-control" name="no_kp_penjaga_pelajar"></div>
                       </div>
                     </div>
 
                       {{--hiddent input--}}
                       <input type="hidden" name="admin_id" value="1">
                     <input type="hidden" name="parent_id" value="1">
-                      <input type="hidden" name="nama" value="">
+                      {{--<input type="hidden" name="nama" value="">--}}
                       {{--<input type="hidden" name="no_tel" value="">--}}
                       {{--<input type="hidden" name="no_hp" value="">--}}
-                      <input type="hidden" name="tarikh_lahir" value="">
-                      <input type="hidden" name="alamat" value="">
-                      <input type="hidden" name="poskod" value="">
-                      <input type="hidden" name="email" value="">
-                      <input type="hidden" name="umur" value="">
-                      <input type="hidden" name="jantina" value="">
+                      {{--<input type="hidden" name="tarikh_lahir" value="">--}}
+                      {{--<input type="hidden" name="alamat" value="">--}}
+                      {{--<input type="hidden" name="poskod" value="">--}}
+                      {{--<input type="hidden" name="email" value="">--}}
+                      {{--<input type="hidden" name="umur" value="">--}}
+                      {{--<input type="hidden" name="jantina" value="">--}}
 
 
                     <div class="form-actions pal">

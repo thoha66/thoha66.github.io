@@ -10,17 +10,17 @@ class Student extends Model
         'admin_id',
         'parent_id',
         'classroom_id',
-        'no_surat_beranak',
-        'no_kp',
-        'nama',
-        'tingkatan',
-        'no_kp_penjaga',
-        'tarikh_lahir',
-        'alamat',
-        'poskod',
-        'email',
-        'umur',
-        'jantina'
+        'no_surat_beranak_pelajar',
+        'no_kp_pelajar',
+        'nama_pelajar',
+        'tingkatan_pelajar',
+        'no_kp_penjaga_pelajar',
+        'tarikh_lahir_pelajar',
+        'alamat_pelajar',
+        'poskod_pelajar',
+        'email_pelajar',
+        'umur_pelajar',
+        'jantina_pelajar'
     ];
 
     // Eloquent: Relationships

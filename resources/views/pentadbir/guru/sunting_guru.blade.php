@@ -36,7 +36,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-credit-card "></i>
-                          <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp" value="{{ $teacher->no_kp }} " >
+                          <input id="inputKp" type="text" placeholder="" class="form-control" name="no_kp_guru" value="{{ $teacher->no_kp_guru }} " >
                         </div>
                       </div>
                     </div>
@@ -47,7 +47,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-user "></i>
-                          <input id="inputNama" type="text" placeholder="" class="form-control" name="jenis_guru" value="{{ $teacher->nama }}" disabled>
+                          <input id="inputNama" type="text" placeholder="" class="form-control" name="nama_guru" value="{{ $teacher->nama_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -84,7 +84,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-volume-control-phone"></i>
-                          <input id="no_tel" type="text" placeholder="" class="form-control" name="no_tel" value="{{ $teacher->no_tel }}" disabled>
+                          <input id="no_tel" type="text" placeholder="" class="form-control" name="no_tel_guru" value="{{ $teacher->no_tel_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -95,7 +95,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-mobile"></i>
-                          <input id="no_hp" type="text" placeholder="" class="form-control" name="no_hp" value="{{ $teacher->no_hp }}" disabled>
+                          <input id="no_hp" type="text" placeholder="" class="form-control" name="no_hp_guru" value="{{ $teacher->no_hp_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -106,7 +106,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-calendar"></i>
-                          <input id="tarikh_lahir" type="date" placeholder="" class="form-control" name="tarikh_lahir" value="{{ $teacher->tarikh_lahir }}" disabled>
+                          <input id="tarikh_lahir" type="date" placeholder="" class="form-control" name="tarikh_lahir_guru" value="{{ $teacher->tarikh_lahir_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -117,7 +117,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-home"></i>
-                          <input id="alamat" type="text" placeholder="" class="form-control" name="guru_kelas" value="{{ $teacher->alamat }}" disabled>
+                          <input id="alamat" type="text" placeholder="" class="form-control" name="alamat_guru" value="{{ $teacher->alamat_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -128,7 +128,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-braille"></i>
-                          <input id="poskod" type="text" placeholder="" class="form-control" name="poskod" value="{{ $teacher->poskod }}" disabled>
+                          <input id="poskod" type="text" placeholder="" class="form-control" name="poskod_guru" value="{{ $teacher->poskod_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -139,7 +139,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-location-arrow"></i>
-                          <input id="email" type="text" placeholder="" class="form-control" name="email" value="{{ $teacher->email }}" disabled>
+                          <input id="email" type="text" placeholder="" class="form-control" name="email_guru" value="{{ $teacher->email_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -150,7 +150,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-hashtag"></i>
-                          <input id="umur" type="text" placeholder="" class="form-control" name="umur" value="{{ $teacher->umur }}" disabled>
+                          <input id="umur" type="text" placeholder="" class="form-control" name="umur_guru" value="{{ $teacher->umur_guru }}" disabled>
                         </div>
                       </div>
                     </div>
@@ -161,7 +161,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-venus-mars"></i>
-                          <input id="jantina" type="text" placeholder="" class="form-control" name="jantina" value="{{ $teacher->jantina }}" disabled>
+                          <input id="jantina" type="text" placeholder="" class="form-control" name="jantina_guru" value="{{ $teacher->jantina_guru }}" disabled>
                         </div>
                       </div>
                     </div>
