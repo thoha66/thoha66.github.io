@@ -21,7 +21,7 @@
         <tr >
           <th class="text-center">#</th>
           <th class="text-center">Nama Guru</th>
-          <th class="text-center">Kelas Subjek</th>
+          <th class="text-center">Kelas : Subjek</th>
           <th class="text-center">Tajuk</th>
           <th class="text-center">Penerangan Tugasan</th>
           <th class="text-center">Tindakkan</th>
@@ -40,28 +40,30 @@
               <?php echo $no; ?>
             </td>
             <td class="text-center">
-              {{ $taskmark->id }}
-
-            {{--</td>--}}
-            {{--<td class="text-center">--}}
-              {{--{{ $taskmark->classroom_subject_id }}--}}
-            {{--</td>--}}
-            {{--<td class="text-center">--}}
-              {{--{{ $taskmark->tajuk_tugasan }}--}}
-            {{--</td>--}}
-            {{--<td class="text-center">--}}
-              {{--{{ $taskmark->penerangan_tugasan }}--}}
+              {{ $taskmark->nama }}
+            </td>
+            <td class="text-center">
+{{--              @foreach($classroomsubjects as $classroomsubject)--}}
+                {{ $taskmark->nama_kelas }}
+                :
+                {{ $taskmark->nama_subjek }}
+              {{--@endforeach--}}
+            </td>
+            <td class="text-center">
+              {{ $taskmark->tajuk_tugasan }}
+            </td>
+            <td class="text-center">
+              {{ $taskmark->penerangan_tugasan }}
             </td>
             <td class="text-center">
 
-              {{--<form action="{!! url('task/'.$taskmark->id) !!}" method="POST" >--}}
-                {{--<a href="{!! url('task/'.$taskmark->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>--}}
-                {{--<a href="{!! url('task/'.$taskmark->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>--}}
-                {{--<a href="{{ URL::route('addmark', $taskmark->id) }}" class="btn btn btn-success btn-sm"><i class="glyphicon glyphicon-info-sign"></i> Beri Markah</a>--}}
-                {{--<button type="submit" onclick="clicked(event)" value="Submit" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>   Buang</button>--}}
-                {{--<input type="hidden" name="_method" value="DELETE">--}}
-                {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
-              {{--</form>--}}
+              <form action="{!! url('taskmark/'.$taskmark->id) !!}" method="POST" >
+                <a href="{!! url('taskmark/'.$taskmark->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
+                <a href="{!! url('taskmark/'.$taskmark->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
+                <button type="submit" onclick="clicked(event)" value="Submit" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>   Buang</button>
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              </form>
 
             </td>
           </tr>

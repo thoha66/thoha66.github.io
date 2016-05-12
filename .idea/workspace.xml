@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b0e1a30-602e-4346-a77d-9c2f27986599" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskMarkController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskMarkController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/sidebarmenu.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/sidebarmenu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php" afterPath="$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php" />
     </list>
     <ignored path="jejaksekolah3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,49 +30,49 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="21" column="86" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskMarkController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskMarkController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskMarkController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Task.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="senarai_markah_tugasan.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="272">
+              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
               <folding>
-                <element signature="e#312#336#0#HTML" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebarmenu.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/sidebarmenu.blade.php">
+      <file leaf-file-name="senarai_markah_tugasan.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
+            <state relative-caret-position="124">
+              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassroomSubject.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/ClassroomSubject.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskMark.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/TaskMark.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -141,8 +138,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_05_05_020446_create_tasks_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/sidebarmenu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TaskMarkController.php" />
+        <option value="$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php" />
       </list>
     </option>
   </component>
@@ -191,7 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,7 +333,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,7 +461,8 @@
       <workItem from="1462950074475" duration="19837000" />
       <workItem from="1463027216118" duration="1227000" />
       <workItem from="1463035221562" duration="1923000" />
-      <workItem from="1463039169942" duration="3611000" />
+      <workItem from="1463039169942" duration="4225000" />
+      <workItem from="1463059865764" duration="7511000" />
     </task>
     <task id="LOCAL-00001" summary="guru done for -select all">
       <created>1460812027120</created>
@@ -592,11 +590,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463036175015</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="task mark -c -r done">
+      <created>1463043158777</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1463043158777</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242530000" />
+    <option name="totallyTimeSpent" value="250655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +665,8 @@
     <MESSAGE value="create db,model -tasks -taskmarks" />
     <MESSAGE value="task -crud done" />
     <MESSAGE value="task mark -c done" />
-    <option name="LAST_COMMIT_MESSAGE" value="task mark -c done" />
+    <MESSAGE value="task mark -c -r done" />
+    <option name="LAST_COMMIT_MESSAGE" value="task mark -c -r done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -918,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ClassroomSubject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Teacher.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -952,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="37" column="29" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,19 +961,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/beri_markah_tugasan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="115" selection-start-line="60" selection-start-column="115" selection-end-line="60" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/senarai_tugasan.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,22 +972,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/includes/sidebarmenu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
+        <state relative-caret-position="1632">
           <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1007,7 +986,7 @@
     <entry file="file://$PROJECT_DIR$/app/TaskMark.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1020,20 +999,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="e#312#336#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="21" column="86" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ClassroomSubject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/beri_markah_tugasan.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="60" column="115" selection-start-line="60" selection-start-column="115" selection-end-line="60" selection-end-column="115" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TaskMarkController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="272">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/guru/tugasan/markah_tugasan/senarai_markah_tugasan.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
           <folding />
         </state>
       </provider>

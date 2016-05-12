@@ -40,15 +40,25 @@ class TaskMarkController extends Controller
      */
     public function index()
     {
-//        $taskmarks = Task::where('teacher_id',1)->where('status','sudah')->with('taskmarks')->orderBy('created_at','desc')->paginate(2);
+//        $taskmarks = DB::table('task_marks')
+//            ->join('tasks', 'tasks.id', '=', 'task_marks.task_id')
+//            ->where('tasks.teacher_id','=', 1)
+//            ->get();
+
         $taskmarks = DB::table('task_marks')
             ->join('tasks', 'tasks.id', '=', 'task_marks.task_id')
+            ->join('teachers', 'teachers.id', '=', 'tasks.teacher_id')
+            ->join('classroom_subjects', 'classroom_subjects.id', '=', 'tasks.classroom_subject_id')
+            ->join('classrooms', 'classrooms.id', '=', 'classroom_subjects.classroom_id')
+            ->join('subjects', 'subjects.id', '=', 'classroom_subjects.subject_id')
             ->where('tasks.teacher_id','=', 1)
+//            ->select('task_marks.*', 'tasks.*', 'classroom_subjects.*')
             ->get();
-//        $taskmarks = DB::table('tasks')
-//            ->join('task_marks', 'task_marks.task_id', '=', 'tasks.id')
-//            ->where('teacher_id' ,'=', 1)
-//            ->get();
+
+//        $classroomsubject_id = $taskmarks->classroom_subject_id;
+//        $classroomsubjects = ClassroomSubject::find($classroomsubject_id)->with('subject')->with('classroom');
+
+
         return view('guru.tugasan.markah_tugasan.senarai_markah_tugasan',compact('taskmarks'));
     }
 
