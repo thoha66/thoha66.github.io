@@ -23,13 +23,13 @@ class Student extends Model
         'jantina'
     ];
 
-  // Eloquent: Relationships
-  public function admin(){
-    return $this->belongsTo('App\Admin');
-  }
-  public function parent(){
-    return $this->belongsTo('App\Parent');
-  }
+    // Eloquent: Relationships
+    public function admin(){
+        return $this->belongsTo('App\Admin');
+    }
+    public function parent(){
+        return $this->belongsTo('App\Parent');
+    }
     public function classroom(){
         return $this->belongsTo('App\Classroom');
     }

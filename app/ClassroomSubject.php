@@ -16,7 +16,7 @@ class ClassroomSubject extends Model
 
     // Eloquent: Relationships
     public function teacher(){
-      return $this->belongsTo('App\Teacher');
+        return $this->belongsTo('App\Teacher');
     }
 
     public function admin2(){
@@ -29,5 +29,9 @@ class ClassroomSubject extends Model
 
     public function classroom(){
         return $this->belongsTo('App\Classroom');
+    }
+
+    public function tasks2(){
+        return $this->hasMany('App\Task');
     }
 }

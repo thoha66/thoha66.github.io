@@ -20,7 +20,7 @@ class Admin extends Model
 
 
   // Eloquent: Relationships
-  
+
   public function news(){
     return $this->hasMany('App\News');
   }

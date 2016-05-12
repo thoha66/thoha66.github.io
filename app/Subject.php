@@ -14,11 +14,11 @@ class Subject extends Model
 
     // Eloquent: Relationships
     public function admin(){
-      return $this->belongsTo('App\Admin');
+        return $this->belongsTo('App\Admin');
     }
 
     public function classrooms(){
-      return $this->belongsToMany('App\Classroom','classroom_subjects','subject_id','classroom_id');
+        return $this->belongsToMany('App\Classroom','classroom_subjects','subject_id','classroom_id');
     }
 
     public function classroomsubjects(){
