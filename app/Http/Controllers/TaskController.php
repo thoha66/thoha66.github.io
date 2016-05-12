@@ -19,7 +19,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::where('teacher_id',1)->with('teacher')->orderBy('created_at','desc')->paginate(2);
+        $tasks = Task::where('teacher_id',1)->where('status','belum')->with('teacher')->orderBy('created_at','desc')->paginate(2);
 //        $tasks = Task::with('classroomsubject2')->with('classroom')->with('students')->orderBy('created_at','desc')->paginate(2);
 //        $tasks = Task::with('classroomsubject2')->with('classroom')->with('students')->orderBy('created_at','desc')->paginate(2);
 
@@ -55,6 +55,7 @@ class TaskController extends Controller
             $task->penerangan_tugasan = $request->input('penerangan_tugasan');
             $task->tarikh_beri = $request->input('tarikh_beri');
             $task->tarikh_hantar = $request->input('tarikh_hantar');
+            $task->status = 'belum';
 
             $task->save();
 

@@ -40,7 +40,16 @@ class TaskMarkController extends Controller
      */
     public function index()
     {
-        return view('guru.tugasan.markah_tugasan.laman_utama_guru');
+//        $taskmarks = Task::where('teacher_id',1)->where('status','sudah')->with('taskmarks')->orderBy('created_at','desc')->paginate(2);
+        $taskmarks = DB::table('task_marks')
+            ->join('tasks', 'tasks.id', '=', 'task_marks.task_id')
+            ->where('tasks.teacher_id','=', 1)
+            ->get();
+//        $taskmarks = DB::table('tasks')
+//            ->join('task_marks', 'task_marks.task_id', '=', 'tasks.id')
+//            ->where('teacher_id' ,'=', 1)
+//            ->get();
+        return view('guru.tugasan.markah_tugasan.senarai_markah_tugasan',compact('taskmarks'));
     }
 
     /**
@@ -78,12 +87,7 @@ class TaskMarkController extends Controller
         $id = $request->input('task_id');
 
         $task = Task::find($id);
-        $task->teacher_id           = $task->teacher_id;
-        $task->classroom_subject_id = $task->classroom_subject_id;
-        $task->tajuk_tugasan        = $task->tajuk_tugasan;
-        $task->penerangan_tugasan   = $task->penerangan_tugasan;
-        $task->tarikh_beri          = $task->tarikh_beri;
-        $task->tarikh_hantar        = $task->tarikh_hantar;
+        $task->status        = 'sudah';
 
         $task->save();
     }

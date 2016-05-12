@@ -94,6 +94,14 @@
             </a>
         </li>
 
+        <li><a href="{!! url('taskmark') !!}">
+
+                <i class="fa fa-info-circle fa-fw">
+                    <div class="icon-bg bg-yellow"></div>
+                </i><span class="menu-title">Senarai Markah Tugasan</span>
+            </a>
+        </li>
+
     </ul>
 </div>
 </nav>
