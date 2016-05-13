@@ -53,14 +53,16 @@
                     </div>
 
                     <div class="form-group">
-                      <label for="inputGK" class="col-md-3 control-label">
-                        Guru Kelas
-                      </label>
+                      <label for="classroom_id" class="col-md-3 control-label">
+                        Guru Kelas</label>
                       <div class="col-md-9">
-                        <div class="input-icon right">
-                          <i class="fa fa-university"></i>
-                          <input id="inputGK" type="text" placeholder="" class="form-control" name="guru_kelas" value="{{ $teacher->guru_kelas }}" >
-                        </div>
+
+                        <select class="form-control" id="classroom_id" name="guru_kelas_id" >
+                          @foreach($classrooms as $classroom)
+                            <option value="{{ $classroom->id }}">{{ $classroom->nama_kelas }}</option>
+                          @endforeach
+                        </select>
+
                       </div>
                     </div>
 
@@ -185,4 +187,18 @@
           <div class="col-lg-1"></div>
         </div>
 
+@stop
+
+    @section('script')
+      {{--select2 start--}}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
+
+      <script type="text/javascript">
+        $("#classroom_id").select2({
+          tags: true,
+          maximumSelectionLength: 3
+        })
+      </script>
+
+  {{--select2 end--}}
 @stop

@@ -102,6 +102,22 @@
             </a>
         </li>
 
+        <li><a href="{!! url('taskmark') !!}">
+
+                <i class="fa fa-info-circle fa-fw">
+                    <div class="icon-bg bg-yellow"></div>
+                </i><span class="menu-title">Masukkan Kedatangan</span>
+            </a>
+        </li>
+
+        <li><a href="{!! url('taskmark') !!}">
+
+                <i class="fa fa-info-circle fa-fw">
+                    <div class="icon-bg bg-yellow"></div>
+                </i><span class="menu-title">Senarai Kedatangan</span>
+            </a>
+        </li>
+
     </ul>
 </div>
 </nav>

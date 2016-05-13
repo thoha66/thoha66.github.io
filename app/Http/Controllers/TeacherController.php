@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Teacher;
+use App\Classroom;
+use DB;
 
 class TeacherController extends Controller
 {
@@ -28,7 +30,8 @@ class TeacherController extends Controller
      */
     public function create()
     {
-        return view('pentadbir.guru.daftar_guru');
+        $classrooms = Classroom::all();
+        return view('pentadbir.guru.daftar_guru',compact('classrooms'));
     }
 
     /**
@@ -47,7 +50,7 @@ class TeacherController extends Controller
             $teacher->no_kp_guru = $request->input('no_kp_guru');
             $teacher->jenis_guru = $request->input('jenis_guru');
 
-            $teacher->guru_kelas = $request->input('guru_kelas');
+            $teacher->guru_kelas_id = $request->input('guru_kelas_id');
 //            $teacher->nama = $request->input('nama');
 //            $teacher->no_tel = $request->input('no_tel');
 //
@@ -73,8 +76,12 @@ class TeacherController extends Controller
      */
     public function show($id)
     {
-        $teacher = Teacher::findOrFail($id);
-        return view('pentadbir.guru.papar_guru',['teacher' => $teacher]);
+        $teacher = Teacher::with('classroom4')->find($id);
+//        $teacher = DB::table('teachers')
+//            ->join('classrooms', 'classrooms.id', '=', 'teachers.guru_kelas_id')
+//            ->where('teachers.guru_kelas_id','=', $id)
+//            ->get();
+        return view('pentadbir.guru.papar_guru',compact('teacher'));
     }
 
     /**
@@ -85,8 +92,9 @@ class TeacherController extends Controller
      */
     public function edit($id)
     {
+        $classrooms = Classroom::all();
         $teacher = Teacher::find($id);
-        return view('pentadbir.guru.sunting_guru',['teacher' => $teacher]);
+        return view('pentadbir.guru.sunting_guru',compact('classrooms','teacher'));
     }
 
     /**
@@ -105,7 +113,7 @@ class TeacherController extends Controller
         $teacher->no_kp_guru = $request->input('no_kp_guru');
         $teacher->jenis_guru = $request->input('jenis_guru');
 
-        $teacher->guru_kelas = $request->input('guru_kelas');
+        $teacher->guru_kelas_id = $request->input('guru_kelas_id');
         $teacher->nama_guru = $request->input('nama_guru');
         $teacher->no_tel_guru = $request->input('no_tel_guru');
 

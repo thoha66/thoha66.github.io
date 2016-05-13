@@ -15,7 +15,7 @@ class Teacher extends Model
     'admin_id',
     'no_kp_guru',
     'jenis_guru',
-    'guru_kelas',
+    'guru_kelas_id',
     'nama_guru',
     'no_tel_guru',
     'no_hp_guru',
@@ -38,5 +38,13 @@ class Teacher extends Model
 
   public function tasks(){
     return $this->hasMany('App\Task');
+  }
+
+  public function attendances(){
+    return $this->hasMany('App\Attendance');
+  }
+
+  public function classroom4(){
+    return $this->belongsTo('App\Classroom','guru_kelas_id');
   }
 }

@@ -57,7 +57,7 @@
                       <div class="col-md-9">
                         <div class="input-icon right">
                           <i class="fa fa-university"></i>
-                          <input id="inputGK" type="text" placeholder="" class="form-control" name="guru_kelas" value="{{ $teacher->guru_kelas }}" disabled>
+                          <input id="inputGK" type="text" placeholder="" class="form-control" name="guru_kelas_id" value="{{ $teacher->classroom4->nama_kelas }}" disabled>
                         </div>
                       </div>
                     </div>

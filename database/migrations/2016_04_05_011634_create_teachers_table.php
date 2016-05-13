@@ -15,9 +15,9 @@ class CreateTeachersTable extends Migration
         Schema::create('teachers', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('admin_id')->unsigned(); //FK
+            $table->integer('guru_kelas_id')->unsigned(); // (FK) Menjadi guru kelas di mana ?
             $table->string('no_kp_guru')->nullable();
             $table->string('jenis_guru')->nullable(); //Tak boleh edit oleh guru. Hanya pentadbir yg boleh edit
-            $table->string('guru_kelas')->nullable(); //Menjadi guru kelas di mana ?
             $table->string('nama_guru')->nullable();
             $table->string('no_tel_guru')->nullable();
             $table->string('no_hp_guru')->nullable();
@@ -33,6 +33,10 @@ class CreateTeachersTable extends Migration
             $table->foreign('admin_id')
                 ->references('id')
                 ->on('admins');
+
+            $table->foreign('guru_kelas_id')
+                ->references('id')
+                ->on('classrooms');
             
         });
     }
