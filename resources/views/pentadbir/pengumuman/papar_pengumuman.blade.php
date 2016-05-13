@@ -9,7 +9,7 @@
 @endsection
 
 @section('begin_title_right')
-  <li><i class="fa fa-user "></i>&nbsp;<a href="#">Butiran Pengumuman</a>&nbsp;&nbsp;
+  <li><i class="fa fa-user "></i>&nbsp;Butiran Pengumuman&nbsp;&nbsp;
 @endsection
 
 @section('content')

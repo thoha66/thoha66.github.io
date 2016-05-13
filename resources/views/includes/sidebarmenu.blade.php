@@ -102,7 +102,7 @@
             </a>
         </li>
 
-        <li><a href="{!! url('taskmark') !!}">
+        <li><a href="{!! url('attendance') !!}">
 
                 <i class="fa fa-info-circle fa-fw">
                     <div class="icon-bg bg-yellow"></div>
@@ -110,7 +110,7 @@
             </a>
         </li>
 
-        <li><a href="{!! url('taskmark') !!}">
+        <li><a href="{!! url('attendance') !!}">
 
                 <i class="fa fa-info-circle fa-fw">
                     <div class="icon-bg bg-yellow"></div>

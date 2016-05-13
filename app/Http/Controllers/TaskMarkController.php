@@ -106,6 +106,8 @@ class TaskMarkController extends Controller
         $task->status        = 'sudah';
 
         $task->save();
+
+        return redirect('taskmark');
     }
 
     /**

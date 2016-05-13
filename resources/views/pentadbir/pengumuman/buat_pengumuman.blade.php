@@ -18,7 +18,7 @@
 
             <div class="col-lg-2"></div>
           <div class="col-lg-9">
-            <div class="panel panel-grey">
+            <div class="panel panel-blue" style="background:#FFF;">
               <div class="panel-heading">
                 Pengumuman</div>
               <div class="panel-body pan">

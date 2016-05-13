@@ -42,11 +42,11 @@
                             <?php echo $no; ?>
                         </td>
                         <td class="text-center">
-                            {{ $student->no_kp }}
+                            {{ $student->no_kp_pelajar }}
 
                         </td>
                         <td class="text-center">
-                            {{ $student->nama }}
+                            {{ $student->nama_pelajar }}
                         </td>
                         <td class="text-center">
                             {{ $class_name }}

@@ -31,7 +31,7 @@ class Classroom extends Model
   }
 
   public function teachers4(){
-    return $this->hasOne('App\Teacher','guru_kelas_id','id');
+    return $this->hasMany('App\Teacher','guru_kelas_id','id');
   }
 
 }

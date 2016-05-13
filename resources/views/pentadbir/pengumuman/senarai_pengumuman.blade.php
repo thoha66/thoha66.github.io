@@ -20,7 +20,7 @@
             <thead>
             <tr >
               <th class="text-center">#</th>
-              <th class="text-center">Nama Pelaku</th>
+              <th class="text-center">Nama Pentadbir</th>
               <th class="text-center">Tajuk</th>
               <th class="text-center">Tindakkan</th>
             </tr>
@@ -38,7 +38,7 @@
                 <?php echo $no; ?>
               </td>
               <td class="text-center">
-                {{ $news->admin->nama }}
+                {{ $news->admin->nama_admin }}
 
               </td>
               <td class="text-center">
@@ -46,13 +46,10 @@
               </td>
               <td class="text-center">
 
-                          <form action="{!! url('news/'.$news->id) !!}" method="POST" >
-                              <a href="{!! url('news/'.$news->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
-                              <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
-                              <button type="submit" onclick="clicked(event)" value="Submit" class="btn btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove-sign"></i>   Buang</button>
-                              <input type="hidden" name="_method" value="DELETE">
-                              <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                          </form>
+                  <a href="{!! url('news/'.$news->id) !!}" class="btn btn btn-info btn-sm"><i class="glyphicon glyphicon-info-sign"></i>  Maklumat Lengkap</a>
+                  <a href="{!! url('news/'.$news->id.'/edit') !!}" type="button" class="btn btn btn-warning btn-sm"><i class="glyphicon glyphicon-edit"></i>  Kemaskini</a>
+                  <a href="{!! url('news/'.$news->id) !!}" class="btn btn-danger"  data-method="delete" data-token="{{csrf_token()}}" data-confirm="Are you sure?"><i class="fa fa-trash-o"></i> Buang</a>
+
 
               </td>
             </tr>
@@ -77,91 +74,76 @@
       </div>
 @stop
 @section('script')
-          <script>
-              function clicked(e)
-              {
-                  if(!confirm('Are you sure?'))e.preventDefault();
-              }
-          </script>
-          <script type="text/javascript">
-              function clicked() {
-                  if (confirm('Do you want to submit?')) {
-                      yourformelement.submit();
-                  } else {
-                      return false;
-                  }
-              }
-          </script>
-<script type="text/javascript">
-		(function() {
+<script>
+    (function() {
 
-		  var laravel = {
-		    initialize: function() {
-		      this.methodLinks = $('a[data-method]');
-		      this.token = $('a[data-token]');
-		      this.registerEvents();
-		    },
+        var laravel = {
+            initialize: function() {
+                this.methodLinks = $('a[data-method]');
 
-		    registerEvents: function() {
-		      this.methodLinks.on('click', this.handleMethod);
-		    },
+                this.registerEvents();
+            },
 
-		    handleMethod: function(e) {
-		      var link = $(this);
-		      var httpMethod = link.data('method').toUpperCase();
-		      var form;
+            registerEvents: function() {
+                this.methodLinks.on('click', this.handleMethod);
+            },
 
-		      // If the data-method attribute is not PUT or DELETE,
-		      // then we don't know what to do. Just ignore.
-		      if ( $.inArray(httpMethod, ['PUT', 'DELETE']) === - 1 ) {
-		        return;
-		      }
+            handleMethod: function(e) {
+                var link = $(this);
+                var httpMethod = link.data('method').toUpperCase();
+                var form;
 
-		      // Allow user to optionally provide data-confirm="Are you sure?"
-		      if ( link.data('confirm') ) {
-		        if ( ! laravel.verifyConfirm(link) ) {
-		          return false;
-		        }
-		      }
+                // If the data-method attribute is not PUT or DELETE,
+                // then we don't know what to do. Just ignore.
+                if ( $.inArray(httpMethod, ['PUT', 'DELETE']) === - 1 ) {
+                    return;
+                }
 
-		      form = laravel.createForm(link);
-		      form.submit();
+                // Allow user to optionally provide data-confirm="Are you sure?"
+                if ( link.data('confirm') ) {
+                    if ( ! laravel.verifyConfirm(link) ) {
+                        return false;
+                    }
+                }
 
-		      e.preventDefault();
-		    },
+                form = laravel.createForm(link);
+                form.submit();
 
-		    verifyConfirm: function(link) {
-		      return confirm(link.data('confirm'));
-		    },
+                e.preventDefault();
+            },
 
-		    createForm: function(link) {
-		      var form =
-		      $('<form>', {
-		        'method': 'POST',
-		        'action': link.attr('href')
-		      });
+            verifyConfirm: function(link) {
+                return confirm(link.data('confirm'));
+            },
 
-		      var token =
-		      $('<input>', {
-		        'type': 'hidden',
-		        'name': '_token',
-		        'value': link.data('token')
-		        });
+            createForm: function(link) {
+                var form =
+                        $('<form>', {
+                            'method': 'POST',
+                            'action': link.attr('href')
+                        });
 
-		      var hiddenInput =
-		      $('<input>', {
-		        'name': '_method',
-		        'type': 'hidden',
-		        'value': link.data('method')
-		      });
+                var token =
+                        $('<input>', {
+                            'type': 'hidden',
+                            'name': 'csrf_token',
+                            'value': '<?php echo csrf_token(); ?>'
+                        });
 
-		      return form.append(token, hiddenInput)
-		                 .appendTo('body');
-		    }
-		  };
+                var hiddenInput =
+                        $('<input>', {
+                            'name': '_method',
+                            'type': 'hidden',
+                            'value': link.data('method')
+                        });
 
-		  laravel.initialize();
+                return form.append(token, hiddenInput)
+                        .appendTo('body');
+            }
+        };
 
-		})();
-	</script>
+        laravel.initialize();
+
+    })();
+</script>
 @stop

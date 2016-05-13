@@ -40,7 +40,7 @@
                             <?php echo $no; ?>
                         </td>
                         <td class="text-center">
-                            {{ $task->teacher->nama }}
+                            {{ $task->teacher->nama_guru }}
 
                         </td>
                         <td class="text-center">

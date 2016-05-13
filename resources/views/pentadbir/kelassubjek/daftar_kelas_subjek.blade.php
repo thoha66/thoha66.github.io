@@ -70,7 +70,7 @@
 
                                         <select class="form-control" id="teacher_id" name="teacher_id" >
                                             @foreach($teachers as $teacher)
-                                                <option value="{{ $teacher->id }}">{{ $teacher->nama }}</option>
+                                                <option value="{{ $teacher->id }}">{{ $teacher->nama_guru }}</option>
                                             @endforeach
                                         </select>
 
@@ -110,23 +110,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
     <script type="text/javascript">
         $("#subject_id").select2({
-            tags: true,
-            maximumSelectionLength: 3
-        })
+            placeholder: "Pilih subjek",
+            allowClear: true
+        });
     </script>
 
     <script type="text/javascript">
+//        $("#classroom_id").select2({
+//            tags: true,
+//            maximumSelectionLength: 3
+//        })
         $("#classroom_id").select2({
-            tags: true,
-            maximumSelectionLength: 3
-        })
+            placeholder: "Pilih kelas",
+            allowClear: true
+        });
     </script>
 
     <script type="text/javascript">
         $("#teacher_id").select2({
-            tags: true,
-            maximumSelectionLength: 3
-        })
+            placeholder: "Pilih guru",
+            allowClear: true
+        });
     </script>
     {{--select2 end--}}
 @stop

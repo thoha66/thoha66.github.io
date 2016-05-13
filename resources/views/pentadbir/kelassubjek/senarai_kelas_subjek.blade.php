@@ -1,20 +1,20 @@
 @extends('layouts.master')
 
 @section('title')
-  Senarai Kelas
+  Senarai Kelas Subjek
 @endsection
 
 @section('begin_title_left')
-  Senarai Kelas
+  Senarai Kelas Subjek
 @endsection
 
 @section('begin_title_right')
-  <li><i class="fa fa-book"></i>&nbsp;Senarai Kelas</li>
+  <li><i class="fa fa-book"></i>&nbsp;Senarai Kelas Subjek</li>
 @endsection
 
 @section('content')
   <div class="panel panel-blue" style="background:#FFF;">
-    <div class="panel-heading">Senarai classroom</div>
+    <div class="panel-heading">Senarai Kelas Subjek</div>
     <div class="panel-body">
       <table class="table table-hover table-bordered">
         <thead>
